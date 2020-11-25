@@ -1,0 +1,98 @@
+.content-main{
+    flex: 0 1 600px !important;
+}
+.title{
+    padding-left: 0 !important;
+}
+.settings-block{
+    padding: 20px 0;
+    border-top: 1px solid #f2f2f2;
+}
+.user-email{
+    font-size: 24px;
+    font-weight: 400;
+    cursor: pointer;
+    margin: 10px 0;
+    display: inline-block;
+}
+.form-group{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.form-group label{
+    display: block;
+    flex: 0 0 200px;
+    margin-right: 50px;
+    font-weight: 400;
+}
+.form-group input, .form-group select, .form-group textarea, .form-group .file-input{
+    flex: 1 1 350px;
+}
+.form-group .help-block{
+    width: calc(100% - 250px);
+    margin-left: 250px;
+}
+.applyButton{
+    border: 0;
+    margin-top: 10px;
+    margin-left: 250px;
+    display: inline-block;
+    background-color: #01aaff;
+    padding: 7px 20px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 16px;
+}
+
+
+@media screen and (max-width: 1023px) {
+    .content-side{
+        display: none;
+    }
+    .content-main{
+        margin: 0 auto;
+    }
+    .content-main-nav{
+        min-height: 60px!important;
+    }
+    .title{
+        margin-top: 15px !important;
+    }
+    .title h1{
+        font-size: 32px;
+    }
+}
+@media screen and (max-width: 767px){
+    .content-main-nav{
+        min-height: 50px !important;
+        padding-bottom: 10px !important;
+    }
+    .title{
+        margin-top: 12px !important;
+    }
+    .title h1{
+        font-size: 26px;
+    }
+    .user-email{
+        margin-top: 0;
+    }
+    .user-email span{
+        font-size: 20px;
+    }
+    .form-group > label{
+        flex: 0 0 130px;
+        margin-right: 20px;
+    }
+    .form-group input, .form-group select, .form-group textarea, .form-group .file-input{
+        flex: 1 1 130px;
+    }
+    .form-group .help-block{
+        width: calc(100% - 150px);
+        margin-left: 150px;
+    }
+    .applyButton{
+        margin-left: 150px;
+
+    }
+}

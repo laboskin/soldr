@@ -1,0 +1,215 @@
+.content-main{
+    flex: 0 1 600px !important;
+}
+.post-create{
+    padding-top: 20px;
+
+}
+.title{
+    padding-left: 0 !important;
+}
+.form-group .help-block-error{
+    display: none;
+}
+.form-group.has-error .help-block-error{
+    display: block;
+}
+.form-group{
+    display: flex;
+    flex-wrap: wrap;
+}
+.form-group label{
+    display: block;
+    flex: 0 0 200px;
+    margin-right: 50px;
+    font-weight: 400;
+}
+.form-group input, .form-group select, .form-group textarea, .form-group .file-input{
+    flex: 1 1 300px;
+}
+.form-group p{
+    width: calc(100% - 250px);
+    margin-left: 250px;
+}
+.applyButton{
+    border: 0;
+    margin-top: 10px;
+    margin-left: 250px;
+    display: inline-block;
+    background-color: #01aaff;
+    padding: 7px 20px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 16px;
+}
+.file-preview{
+    border: 0 !important;
+    padding: 0 !important;
+}
+.file-preview-frame{
+    margin: 4px !important;
+    padding: 3px !important;
+    border: 0 !important;
+    border-radius: 5px;
+}
+.kv-file-remove{
+    padding-top: 9px !important;
+    border: 0 !important;
+}
+.kv-upload-progress, .fileinput-cancel, .file-preview-status, .progress{
+    display: none !important;
+}
+.file-drop-zone-title{
+    padding: 30px 10px !important;
+    font-size: 16px !important;
+}
+.kv-file-remove:hover{
+    background-color: #fff !important;
+    border: 0 !important;
+}
+ .file-drop-zone{
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 1px solid #ccc !important;
+}
+.file-drop-zone:hover{
+    border: 1px dashed #ccc !important;
+    padding: 0 !important;
+}
+.kv-file-content{
+    margin-bottom: 10px !important;
+    width: 100px !important;
+    height: 50px !important;
+}
+.file-thumbnail-footer{
+    height: 30px !important;
+}
+.file-footer-caption{
+    display: none !important;
+}
+
+.checkbox-list .checkbox-label{
+    font-weight: 400;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.checkbox-list .checkbox-label::selection{
+    background-color: transparent;
+}
+.checkbox-list .checkbox-label::-moz-selection{
+    background-color: transparent;
+}
+input[type="checkbox"]:checked,
+input[type="checkbox"]:not(:checked){
+    position: absolute;
+    left: -9999px;
+}
+input[type="checkbox"]:checked + label,
+input[type="checkbox"]:not(:checked) + label{
+    display: inline-block;
+    position: relative;
+    padding-left: 28px;
+    line-height: 20px;
+    cursor: pointer;
+}
+input[type="checkbox"]:checked + label:before,
+input[type="checkbox"]:not(:checked) + label:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+}
+input[type="checkbox"]:checked + label:before,
+input[type="checkbox"]:not(:checked) + label:before {
+    border-radius: 2px;
+}
+input[type="checkbox"]:checked + label:after,
+input[type="checkbox"]:not(:checked) + label:after{
+    content: "";
+    position: absolute;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+input[type="checkbox"]:checked + label:after,
+input[type="checkbox"]:not(:checked) + label:after {
+    left: 3px;
+    top: 4px;
+    width: 12px;
+    height: 7px;
+    border-radius: 1px;
+    border-left: 3px solid #009cf0;
+    border-bottom: 3px solid #009cf0;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+input[type="checkbox"]:not(:checked) + label:after{
+    opacity: 0;
+}
+input[type="checkbox"]:checked + label:after{
+    opacity: 1;
+}
+
+
+
+@media screen and (max-width: 1023px) {
+    .content-side{
+        display: none;
+    }
+    .content-main{
+
+        margin: 0 auto;
+    }
+    .content-main-nav{
+        min-height: 60px!important;
+    }
+    .title{
+        margin-top: 15px !important;
+    }
+    .title h1{
+        font-size: 32px;
+    }
+}
+@media screen and (max-width: 767px){
+    .content-main-nav{
+        min-height: 50px !important;
+        padding-bottom: 10px !important;
+    }
+    .title{
+        margin-top: 12px !important;
+    }
+    .title h1{
+        font-size: 26px;
+    }
+    .applyButton{
+        margin-left: 150px;
+    }
+}
+@media screen and (max-width: 767px){
+    .post-create{
+        padding-top: 10px;
+    }
+    .form-group{
+        display: block;
+    }
+    .form-group p{
+        width: auto;
+        margin-left: 0;
+    }
+    .applyButton{
+        margin: 0 auto !important;
+        display: block !important;
+    }
+    .file-drop-zone-title{
+        padding: 30px 0 !important;
+    }
+}

@@ -1,0 +1,12 @@
+.main-container > div{
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 50px auto;
+    background-color: #fff;
+}
+.admin-panel-buttons{
+    padding: 50px 10px;
+}
+.admin-panel-buttons > a{
+    margin: 10px 5px;
+}

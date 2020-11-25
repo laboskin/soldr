@@ -1,0 +1,47 @@
+.user-restore{
+    max-width: 500px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.applyButton{
+    border: 0;
+    margin: 30px auto;
+    display: block;
+    background-color: #01aaff;
+    padding: 7px 20px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 1023px) {
+    .content-side{
+        display: none;
+    }
+    .content-main{
+        margin: 0 auto;
+    }
+    .content-main-nav{
+        min-height: 60px!important;
+    }
+    .title{
+        margin-top: 15px !important;
+    }
+    .title h1{
+        font-size: 32px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .content-main-nav {
+        min-height: 50px !important;
+        padding-bottom: 10px !important;
+    }
+
+    .title {
+        margin-top: 12px !important;
+    }
+
+    .title h1 {
+        font-size: 26px;
+    }
+}

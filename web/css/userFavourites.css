@@ -1,0 +1,155 @@
+/* main */
+main{
+    flex: 1 0 auto;
+
+}
+.main-container{
+    height: 100%;
+}
+.content-main{
+    height: 100%;
+}
+.title{
+    margin-top: 21px;
+}
+
+.content-main-nav{
+    flex-wrap: wrap !important;
+    height: auto !important;
+    min-height: 70px !important;
+}
+.title{
+    margin-top: 21px;
+    margin-right: 20px!important;
+}
+/* Сетка объявлений */
+.items-grid{
+    flex-grow: 1;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.item{
+    flex: 1 0 300px;
+    position: relative;
+    padding: 15px 20px;
+}
+.item:hover{
+    box-shadow: 0 0 17px 5px rgba(0,0,0,.08);
+}
+.hidden-item{
+    content: '';
+    flex: 1 0 300px;
+}
+
+.item-image-price{
+    width:100%;
+}
+.item-image-carousel{
+    width:100%;
+    position: relative;
+    padding-bottom: 56.25%;
+}
+
+.item-image-price img{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+    background-color: #f7f7f7;
+}
+
+.item-image-carousel-off .tmb-wrap{
+    display: none;
+}
+
+.item-price{
+    position: absolute;
+    background-color: #fff;
+    color: #000;
+    bottom: 5px;
+    right: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 7px;
+    border-radius: 3px;
+    border: 1px solid #999;
+    z-index: 2;
+}
+.item-headline{
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #231f20;
+}
+.item-address{
+    font-size: 14px;
+    color: #000;
+}
+.item-date{
+    font-size: 14px;
+    color: #999;
+}
+
+/* Медиа: searchPage */
+
+.post-empty{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+
+@media screen and (max-width: 1023px) {
+    .content-side{
+        display: none;
+    }
+    .content-main{
+        margin: 0 auto;
+        max-width: 100%;
+        width: 100%;
+    }
+    .content-main-nav{
+        min-height: 60px!important;
+    }
+    .title{
+        margin-top: 15px !important;
+    }
+    .title h1{
+        font-size: 32px;
+    }
+}
+@media screen and (max-width: 767px){
+    .content-main-nav{
+        min-height: 50px !important;
+        padding-bottom: 10px !important;
+    }
+    .title{
+        margin-top: 12px !important;
+    }
+    .title h1{
+        font-size: 26px;
+    }
+}
+@media screen and (max-width: 630px){
+    .item{
+        padding: 15px 0;
+        flex: 1 1 310px;
+    }
+    .item:hover{
+        box-shadow: none;
+    }
+    .title{
+        padding-left: 0 !important;
+    }
+    .post-empty{
+        padding-left: 0;
+    }
+    .content-main-nav{
+        min-height: 50px !important;
+        padding-bottom: 0!important;
+    }
+}

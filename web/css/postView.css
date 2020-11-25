@@ -1,0 +1,336 @@
+.author-actions{
+    padding: 15px 20px 10px;
+    align-items: center;
+    border: 1px solid #f4f5f9;
+}
+.author-actions.active{
+    background-color: #fff;
+}
+.author-actions.posted{
+    background-color: #fff3de;
+}
+.author-actions.declined{
+    background-color: #fee4e5;
+}
+.author-actions.closed{
+    background-color: #ffe7e8;
+}
+.author-actions.expired{
+    background-color: #ffe7e8;
+}
+.author-actions.ban{
+    background-color: #f5c6cb;
+}
+.author-actions-title{
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.author-buttons{
+    display: flex;
+    flex-wrap: wrap;
+}
+.author-button{
+    text-align: center;
+    padding: 6px 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin: 0 10px 5px 0;
+    background-color: #fff;
+    cursor: pointer;
+    font-weight: 400;
+}
+.admin-actions{
+    padding: 10px;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid #f4f5f9;
+    background-color: #f5c6cb;
+}
+.admin-buttons{
+    display: flex;
+    flex-wrap: wrap;
+}
+.admin-actions a{
+    text-align: center;
+    padding: 6px 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin: 0 10px 5px 0;
+    background-color: #fff;
+    cursor: pointer;
+    font-weight: 400;
+}
+.admin-label{
+    font-size: 20px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+.admin-label span{
+    font-weight: 400;
+}
+.content{
+}
+.content-main-nav{
+    flex-wrap: wrap !important;
+    height: auto !important;
+    min-height: 70px !important;
+}
+.title{
+    margin-top: 21px;
+    margin-right: 20px!important;
+    padding-left: 0 !important;
+}
+.price{
+    padding-left: 0 !important;
+    padding-top: 5px;
+}
+.content-main{
+    flex: 0 1 900px !important;
+    max-width: calc(100% - 300px);
+}
+.price{
+    padding-left: 20px;
+    color: #111;
+}
+.price h1{
+    margin: 0 10px 0 0;
+    font-weight: 400;
+    font-size: 28px;
+}
+
+.post-actions{
+    display: flex;
+    align-items: center;
+}
+.post-actions-button{
+    padding: 4px 10px;
+    line-height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin: 0 10px 0 0;
+    background-color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    cursor: pointer;
+}
+.post-contact{
+    background-color: #01aaff;
+    border-color: #01aaff;
+    color: #fff;
+    font-weight: 500;
+}
+.post-contact::before{
+    content: "";
+    background: url(phone.svg) center no-repeat;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    margin: 2px 3px 2px 0;
+    vertical-align: bottom;
+    line-height: 22px;
+}
+
+.post-favourite::before{
+    content: "";
+    background: url(heart.svg) center no-repeat;
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    margin: 0 3px 0 0;
+    vertical-align: bottom;
+    line-height: 22px;
+}
+.post-actions-button span{
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.post-favourite.in-list::before{
+    background: url(heartfilled.svg) center no-repeat;
+
+}
+.post-status{
+    line-height: 22px;
+    vertical-align: baseline;
+}
+.post-contact{
+
+}
+.post-view{
+    width: 100%;
+}
+.post-status span{
+    margin-right: 10px;
+}
+.post-status svg{
+    fill: #aaa;
+
+}
+.view-block{
+    padding: 20px 0;
+    border-bottom: 1px solid #f2f2f2;
+    font-size: 15px;
+}
+.view-block.last{
+    border: 0;
+}
+.view-properties{
+    display: flex;
+    flex-wrap: wrap;
+}
+.view-property{
+    display: flex;
+    align-items: flex-start;
+    flex: 0 0 50%;
+    flex-wrap: nowrap;
+    padding: 3px 0;
+    position: relative;
+
+}
+.view-property-name{
+    flex: 0 0 200px;
+    background-image: url(dots-characteristic.png);
+    background-repeat: repeat-x;
+    background-position: bottom 6px left 0;
+    background-size: 150px;
+}
+.view-property-value{
+    flex: 1 0 auto;
+}
+.view-property-name span{
+    background-color: #fff;
+    color: #777;
+}
+
+.modal-content{
+    margin-top: 50% !important;
+}
+.modal-header{
+    border-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+.modal-author{
+    display: flex;
+    height: 40px;
+}
+.modal-author-icon{
+    height: 100%;
+}
+.modal-author svg{
+    height: 100%;
+    padding: 10px 0;
+    fill: #009cf0;
+}
+.modal-author-text{
+    margin-left: 10px;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.modal-phone{
+    font-size: 36px;
+    font-weight: 500;
+}
+.modal-advice{
+    color: #999;
+}
+.modal-advice span{
+    color: #009cf0;
+}
+/* Медиа */
+@media screen and (max-width: 1023px) {
+    .content-side{
+        display: none;
+    }
+    .content-main{
+        margin: 0 auto;
+        max-width: 100%;
+        width: 100%;
+    }
+    .content-main-nav{
+        min-height: 60px!important;
+    }
+    .title{
+        margin-top: 15px !important;
+    }
+    .title h1{
+        font-size: 32px;
+    }
+    .price h1{
+        font-size: 26px !important;
+    }
+}
+@media screen and (max-width: 767px) {
+    .content-main-nav{
+        min-height: 50px !important;
+    }
+    .title{
+        margin-top: 12px;
+    }
+
+    .title h1{
+        font-size: 26px;
+    }
+    .price h1{
+        font-size: 22px;
+    }
+
+    .post-actions{
+        flex-flow: wrap;
+    }
+    .post-status{
+        width: 100%;
+    }
+    .post-actions-button{
+        margin-right: 5px;
+        order: 1;
+        margin-top: 5px;
+        flex-grow: 1;
+        text-align: center;
+        padding: 10px 10px;
+    }
+
+    .post-favourite{
+        margin-right: 0;
+        flex-grow: 0;
+    }
+    .post-favourite > span{
+        display: none;
+    }
+    .post-favourite::before{
+        margin-right: 0;
+    }
+    .fotorama{
+        margin: 0 -15px !important;
+    }
+    .fotorama__nav-wrap{
+        padding: 15px !important;
+    }
+    .view-property{
+        flex: 0 0 100%;
+        order: 0 !important;
+    }
+    .view-property-name, .view-property-value{
+        flex: 0 0 50%;
+    }
+    .view-property-name{
+        padding-right: 10px;
+    }
+    .view-property-value{
+        align-self: flex-end;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .author-button{
+        flex-basis: 100%;
+        padding: 10px;
+    }
+    .admin-buttons a{
+        flex-basis: 100%;
+        padding: 10px;
+    }
+}

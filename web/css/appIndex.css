@@ -1,0 +1,277 @@
+/* main */
+main{
+    flex: 1 0 auto;
+}
+.content-side{
+    padding-top: 15px !important;
+}
+.content-main-nav{
+    flex-wrap: wrap !important;
+    height: auto !important;
+    min-height: 70px !important;
+}
+.title{
+    margin-top: 21px;
+}
+/* Логин и регистрация */
+.main-sent, .need-confirm{
+    padding: 10px;
+}
+.login-block, .signup-block{
+    display: none;
+}
+.login-block form, .signup-block form{
+    padding: 30px 0;
+}
+.login-block-visible, .signup-block-visible{
+    display: block;
+}
+.form-group label{
+    font-weight: 400;
+}
+.login-block-checks{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 12px;
+}
+.login-block-checks .form-group{
+    display: inline-block;
+    margin-right: 10px;
+}
+.login-block-checks label{
+    margin-right: 0;
+    display: inline-block;
+    cursor: pointer;
+}
+.login-block-checks .help-block{
+    width: 0;
+    display: none;
+}
+.login-block-checks a{
+    color: #009cf0;
+    margin-bottom: 7px;
+}
+.login-block-checks a:hover{
+    color: #009cf0;
+}
+.loginButton, .signupButton, .show-signup, .show-login{
+    width: 100%;
+    padding: 7px 0;
+    text-align: center;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.loginButton, .signupButton{
+    background-color: #01aaff;
+    color: #fff;
+}
+.login-block-title, .signup-block-title{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f2f2f2;
+
+}
+.login-block-icon, .signup-block-icon{
+    height: 100%;
+}
+.login-block-icon svg, .signup-block-icon svg{
+    padding: 3px 15px 3px 5px;
+    height: 100%;
+    fill: #009cf0;
+}
+.login-block-text, .signup-block-text{
+    font-size: 16px;
+}
+.login-block-checks .form-group > div{
+    margin: 0;
+}
+
+/* Панель пользователя*/
+.user-block{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f2f2f2;
+}
+.user-block-icon{
+    height: 100%;
+}
+.user-block-icon svg{
+    padding: 3px 15px 3px 5px;
+    height: 100%;
+    fill: #009cf0;
+}
+.user-block-text{
+    font-size: 13px;
+}
+.user-block-email{
+    color: #999;
+}
+.user-block-name{
+
+}
+.user-block-logout{
+    flex: 1 0 auto;
+    text-align: right;
+    color: #999;
+}
+.user-block-logout:hover{
+    color: #999;
+}
+.user-block-logout a{
+    display: inline-block;
+    padding: 5px;
+}
+
+
+
+/* Сетка объявлений */
+.items-grid{
+    flex-grow: 1;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+.item{
+    flex: 1 0 250px;
+    position: relative;
+    padding: 15px 20px;
+}
+.item:hover{
+    box-shadow: 0 0 17px 5px rgba(0,0,0,.08);
+}
+.hidden-item{
+    content: '';
+    flex: 1 0 300px;
+}
+.item-image-price{
+    width:100%;
+}
+.item-image-carousel{
+    width:100%;
+    position: relative;
+    padding-bottom: 56.25%;
+}
+.item-image-price img{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+    border-radius: 3px;
+    background-color: #f7f7f7;
+}
+.item-image-carousel-off .tmb-wrap{
+    display: none;
+}
+.item-price{
+    position: absolute;
+    background-color: #fff;
+    color: #000;
+    bottom: 5px;
+    right: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 7px;
+    border-radius: 3px;
+    border: 1px solid #999;
+    z-index: 2;
+}
+.item-headline{
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #231f20;
+}
+.item-address{
+    font-size: 14px;
+    color: #000;
+}
+.item-date{
+    font-size: 14px;
+    color: #999;
+}
+
+/* Медиа */
+@media screen and (max-width: 1023px) {
+    .content-side{
+        display: none;
+    }
+    .content:before{
+        display: block;
+        content: '';
+        flex: 0 0 280px;
+        height: 0;
+        margin-right: 20px;
+    }
+    .content-side-guest{
+        display: block;
+        position: fixed;
+        width: 280px;
+    }
+
+}
+@media screen and (max-width: 900px){
+    .content-side-guest{
+        width: 200px;
+    }
+    .content:before{
+        flex: 0 0 200px;
+        margin-right: 10px;
+    }
+}
+@media screen and (max-width: 767px){
+    .content{
+        flex-wrap: wrap !important;
+    }
+    .content:before{
+        display: none;
+    }
+    .content-side{
+        position: static;
+        flex: 0 0 100% !important;
+    }
+    .loginButton, .signupButton, .show-signup, .show-login{
+        width: 100%;
+        padding: 12px 0;
+    }
+    .content-main-nav{
+        min-height: 50px !important;
+        padding-bottom: 10px !important;
+    }
+    .title{
+        margin-top: 12px;
+    }
+    .title h1{
+        font-size: 26px;
+    }
+}
+@media screen and (max-width: 630px){
+    .item{
+        padding: 15px 0;
+        flex: 1 1 310px;
+    }
+    .item:hover{
+        box-shadow: none;
+    }
+    .title{
+        padding-left: 0 !important;
+    }
+    .content-main-nav{
+        min-height: 50px !important;
+        padding-bottom: 0!important;
+    }
+
+}
+
+
+
